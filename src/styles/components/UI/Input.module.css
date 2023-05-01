@@ -1,0 +1,14 @@
+.input {
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+input:invalid {
+  border: 1px solid red;
+}

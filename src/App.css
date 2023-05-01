@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
