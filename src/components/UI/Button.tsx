@@ -1,7 +1,9 @@
 import cl from "../../styles/components/UI/Button.module.css"
-import { JSX } from "solid-js"
+import { Component, JSX } from "solid-js"
 
-const Button = (props: JSX.HTMLAttributes<HTMLButtonElement> ) => {
+interface ButtonProps extends JSX.HTMLAttributes<HTMLButtonElement> {}
+
+const Button: Component<ButtonProps> = ({ ...props }) => {
   return <button {...props} class={cl.btn} />
 }
 

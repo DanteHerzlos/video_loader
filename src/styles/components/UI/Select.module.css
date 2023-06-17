@@ -1,0 +1,32 @@
+.select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 0.25rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select:hover {
+  border: 1px solid black;
+}
+
+.select:hover + .label {
+  color: black;
+}
+
+.label {
+  position: absolute;
+  font-size: 0.75rem;
+  padding: 0 2px;
+  top: -7px;
+  left: 10px;
+  color: #777;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}

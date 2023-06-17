@@ -4,6 +4,8 @@ import { contextBridge, ipcRenderer } from "electron"
 
 contextBridge.exposeInMainWorld("electronAPI", {
   getThumbnail: (url: string) => ipcRenderer.invoke("ytdlp:get_thumbnail", url),
-  getAudio: (url: string) => ipcRenderer.invoke("ytdlp:get_audio", url),
   changeLoadDir: () => ipcRenderer.invoke("ytdlp:change_load_dir"),
+  getLoadDir: () => ipcRenderer.invoke("ytdlp:get_load_dir"),
+  download: (url: string, options: { videoId: string; audioId: string }) =>
+    ipcRenderer.invoke("ytdlp:download", url, options),
 })
